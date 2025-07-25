@@ -4,6 +4,10 @@
 <br/>
 <img width="1081" height="396" alt="brew-auto-upgrade-notice" src="https://github.com/user-attachments/assets/bbf247df-3ff8-486c-8415-bff2207a19f3" />
 
+## TooooL;DR;
+
+Install with [this guide](https://github.com/sakerhetspolisen/brew-auto-upgrade#installation).
+
 ## Why this repo?
 Since the dawn of Mac OS X, later macOS, man has always missed what in the Linux world can be considered as important as air and water: <i>a native package manager</i>. This still hasn't become a reality, but suddenly we had our lord and saviour Max Howell create what is today known as Homebrew. 
 
@@ -14,15 +18,26 @@ Homebrew is a basically a tool that lets you download the stuff that Apple doesn
 Us Gen Z's are the laziest generation out there, and the last thing we and everyone else wants to do is remember to update our packages. <i>"Tommy, don't forget to update your packages before you go visit Nanny!"</i>💀
 
 ### Why should I care?
-🪲 **Bug-free -** Old packages can have bugs that make things break or act weird. Updates usually fix those bugs so stuff works better.
+🪲 **Bug-free -** Old packages can have bugs that make things break or act weird.
 
-🥷 **Hackerman? No thank you. -** Hackers love old software. Updates patch up security holes that bad guys could take advantage of.
+🥷 **Hackerman? No thank you. -** Hackers love old software. Updates patch up security holes.
 
-💨**Smooooooth -** Other software on your computer might expect the latest versions to be installed. No update, no fun.
+💨**Smooooooth -** Software on your computer might expect the latest versions to be installed.
 
 ### Thanks to my predecessors, but it wasn't good enough
 
 Tons of ready-made solutions exist (brew-autoupdate which [stopped being official March 2024](https://github.com/Homebrew/brew/pull/16822)), but all of them fail to be easy to set up or are way too hard to understand how they work. I wanted to keep it simple.
+
+## My simple script...
+
+... runs brew update, upgrade, upgrade --cask, and brew cleanup once per day.
+
+... executes automatically when you first log in to your Mac.
+
+... shows a notification when updates complete successfully.
+
+... displays an error notification if updates fail, and opens the log file.
+
 
 ## Installation
 It will take under 1 minute I promise!
